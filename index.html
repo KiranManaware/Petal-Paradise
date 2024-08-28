@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="logo.webp">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background-color: #e9d8cd;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 60vh
+      }
+  
+      .slider1 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #14355A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .slider1 .swiper-slide img {
+        display: block;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border: 5px solid #e9d8cd;
+        margin-bottom: 20px;
+      }
+      .card img{
+        width: 100px;
+        height: 100px;
+      }
+      .cards{
+        background-color: #e9d8cd;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-block: 40px;
+      }
+      .cards2{
+        background-color: #e9d8cd;
+        /* border: 1px solid red; */
+        padding-inline: 20px;
+        padding-block: 10px;
+      }
+      .cards3{
+        background-color: #e9d8cd;
+        /* border: 1px solid red; */
+        padding-inline: 20px;
+        padding-block: 10px;
+      }
+      
+
+    </style>
+    <title>Petal Paradise</title>
+</head>
+<body>
+    <!-- navbar start here -->
+    <nav class="navbar navbar-expand-lg  " style="background-color: #a18877;" >
+        <div class="container-fluid">
+            <img src="logo.webp" alt="" width="50px" height="50px" style="margin-inline: 20px; border-radius: 50px;">
+          <a class="navbar-brand text-white" href="#">Petal Paradise</a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="https://www.phoolwala.com/gift-online-cuddly-choco-fantasy-valentne-delivery">Buy</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu " style="background-color: #d3c2b7;">
+                  <li><a class="dropdown-item text-dark" href="https://www.whatsapp.com/">Whatsapp</a></li>
+                  <li><a class="dropdown-item text-dark" href="https://www.instagram.com/">Instagram</a></li>
+                  <li><a class="dropdown-item text-dark" href="">linkedIn</a></li>
+                  <li><a class="dropdown-item text-dark" href="github.com">GitHub  </a></li>
+                  <li><hr class="dropdown-divider text-dark"></li>
+                  <li><a class="dropdown-item text-dark" href="#">Patel Paradise</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex text-white" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Slider start here -->
+      <div class="slider1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img6.jpg" alt="">
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- slider end -->
+
+      <!-- card start -->
+      <div class="cards">
+        <div class="row row-cols-1 row-cols-md-2 g-4 w-50 ">
+          <div class="col">
+            <div class="card">
+              <img src="card1.jpeg" class="card-img-top  " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Eternal Blossom</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Radiant Romance</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Petal Symphony</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sunlit Serenity</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 w-50 ">
+          <div class="col">
+            <div class="card">
+              <img src="card1.jpeg" class="card-img-top  " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Moonlit Blooms</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Harmony Garden</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card3.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whispering Roses</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="card4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Blooming Elegance</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+
+      <!-- cards 2 start here -->
+      <div class="cards2 ">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Middlemist Red </h5>
+                <p class="card-text">
+                  Middlemist Red is a rare and stunning pink camellia, known as one of the rarest flowers in the world, found only in two locations globally.</p>
+                <a href="https://www.southsideblooms.com/the-middlemists-red-rarest-flower-on-earth/?srsltid=AfmBOooRiGoY2_Qfh6_RjpLcxgECcyU2nvd4Szl9deWxcjLtPDeLxb1A" class="btn  text-light" style="background-color: #0e3767; ">Click here for information</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Kadupul Flower</h5>
+                <p class="card-text">The Kadupul Flower is a rare and exquisite night-blooming flower, known for its ethereal beauty and enchanting fragrance, blooming only for a few hours before wilting.</p>
+                <a href="https://101thatchangetheworld.wordpress.com/kadupul-flower-the-priceless-flower/" class="btn  text-light" style="background-color: #0e3767; ">Click here for information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards 2 end -->
+       <!-- cards 3 start here -->
+      <div class="cards3">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Parrot’s Beak</h5>
+                <p class="card-text">Parrot’s Beak is a rare and striking flower with vibrant red or yellow petals shaped like a parrot's beak, admired for its unique and exotic appearance.</p>
+                <a href="https://www.bhg.com/gardening/plant-dictionary/annual/parrots-beak/" class="btn  text-light" style="background-color: #0e3767; ">Click here for information</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Blue Lotus </h5>
+                <p class="card-text">The Blue Lotus is a rare and beautiful water lily, revered for its serene blue petals and symbolic significance in various cultures.</p>
+                <a href="https://www.healthline.com/nutrition/blue-lotus-flower#what-it-is" class="btn  text-light" style="background-color: #0e3767; ">Click here for information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer start here  -->
+      <div class="container-fluid my-5 w-100 " style=" background: #0e3767;">
+        
+        <footer class="text-center text-lg-start text-white" style=" background: #0e3767;">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row my-4">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      
+                <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="logo.webp" height="100%" style="border-radius: 100px;" alt=""
+                       loading="lazy" />
+                </div>
+      
+                <p class="text-center">At Flower Paradise, we celebrate the vibrant world of flowers with detailed information, stunning visuals, and interesting facts about various types of flowers.</p>
+      
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="#!">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+      
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Legal</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Privacy Policy</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Terms of Service</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Cookie Policy</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Disclaimer</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Support</h5>
+      
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>FAQs</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help Center</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Customer Service</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Feedback</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Newsletter</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <p><i class="fas fa-map-marker-alt pe-2"></i>Subscribe to Newsletter</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-phone pe-2"></i>Flower Paradise Blog</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-envelope pe-2 mb-0"></i>Latest Updates</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Patel Paradise.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      
+      </div>
+
+<!-- java script part -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        
+      
+      </script>
+</body>
+</html>
